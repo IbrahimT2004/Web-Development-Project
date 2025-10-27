@@ -6,7 +6,7 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Header and Navigation Bar */
+/* Header */
 header {
     background-color: #333;
     color: white;
@@ -15,8 +15,9 @@ header {
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
+    margin: 10px 0 0;
 }
 
 nav ul li {
@@ -29,10 +30,88 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Main Content */
-section {
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: #e6d8a7;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 2em;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    text-decoration: none;
+}
+
+/* Highlights Section */
+.highlights {
+    padding: 40px 20px;
+}
+
+.destinations {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Services Page */
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-item {
+    background: white;
     padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.service-item button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Contact Page */
+.contact form {
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.contact-info {
     text-align: center;
+    margin-top: 20px;
 }
 
 /* Footer */
@@ -41,7 +120,4 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }

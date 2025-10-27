@@ -3,30 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Us | Egypt Tour Guide</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Contact Us</h1>
+        <h1>Egypt Tour Guide</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html">Tours</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
+    <section class="contact">
         <h2>Get in Touch</h2>
-        <p>Email us at contact@example.com</p>
+        <p>We’d love to help you plan your Egyptian adventure!</p>
+
+        <form>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Your name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Your email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea><br><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p class="contact-info">
+            📧 Email: info@egypttourguide.com<br>
+            ☎️ Phone: +20 123 456 789<br>
+            📍 Location: Cairo, Egypt
+        </p>
     </section>
 
     <footer>
-        <p>&copy; 2025 My Website. All Rights Reserved.</p>
+        <p>&copy; 2025 Egypt Tour Guide. All Rights Reserved.</p>
     </footer>
 
 </body>
